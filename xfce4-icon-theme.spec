@@ -1,12 +1,12 @@
 Summary: 	Icons for Xfce
 Summary(pl):	Ikony dla Xfce
 Name: 		xfce4-icon-theme
-Version: 	4.1.99.2
+Version: 	4.1.99.3
 Release: 	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	0aaa9f0b5e9a088560771381e272ef8a
+# Source0-md5:	599dfbed76c486646feb9de83a6531b4
 URL: 		http://www.xfce.org/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
