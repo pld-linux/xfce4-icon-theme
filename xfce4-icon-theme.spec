@@ -9,7 +9,7 @@ Source0:	ftp://ftp.berlios.de/pub/xfce-goodies/%{version}/%{name}-%{version}.tar
 # Source0-md5:	73e7f7fd220d085f4744f2577808c766
 URL: 		http://www.xfce.org/
 BuildArch:	noarch
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Icon theme for XFce 4 Desktop Environment.
