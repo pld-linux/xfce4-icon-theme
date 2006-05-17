@@ -8,6 +8,7 @@ Group:		X11/Applications
 Source0:	http://www.xfce.org/archive/xfce-%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	8f8f2f899d819ef6bec5360cf49a125d
 URL: 		http://www.xfce.org/
+BuildRequires:	perl-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
