@@ -45,5 +45,6 @@ gtk-update-icon-cache -qf %{_datadir}/icons/Rodent
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %{_iconsdir}/Rodent
+%dir %{_datadir}/xfce4/mime
 %{_datadir}/xfce4/mime/Rodent.mime.xml
 %{_pkgconfigdir}/xfce4-icon-theme-1.0.pc
