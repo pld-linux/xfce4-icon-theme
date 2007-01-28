@@ -1,13 +1,15 @@
-Summary: 	Icons for Xfce
+Summary:	Icons for Xfce
 Summary(pl):	Ikony dla Xfce
-Name: 		xfce4-icon-theme
-Version: 	4.2.3
-Release: 	1
+Name:		xfce4-icon-theme
+Version:	4.4.0
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://hannelore.f1.fhtw-berlin.de/mirrors/xfce4/xfce-%{version}/src/%{name}-%{version}.tar.gz
-# Source0-md5:	484ff5a740de326d107ca34d16f161d3
-URL: 		http://www.xfce.org/
+Source0:	http://www.xfce.org/archive/xfce-%{version}/src/%{name}-%{version}.tar.bz2
+# Source0-md5:	69cf43b167e93e89a8c504d5d18e1142
+URL:		http://www.xfce.org/
+BuildRequires:	gtk+2 >= 2:2.8.20
+BuildRequires:	perl-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,14 +24,16 @@ Zestaw ikon dla ¶rodowiska Xfce.
 
 %build
 %configure
-
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	pkgconfigdir='%{_datadir}/pkgconfig'
+
+gtk-update-icon-cache -ft $RPM_BUILD_ROOT%{_iconsdir}/Rodent
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -37,5 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%{_iconsdir}/*
+%{_iconsdir}/Rodent
+%dir %{_datadir}/xfce4/mime
+%{_datadir}/pkgconfig/xfce4-icon-theme-1.0.pc
 %{_datadir}/xfce4/mime/Rodent.mime.xml
