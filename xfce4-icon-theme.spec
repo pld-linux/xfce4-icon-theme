@@ -1,5 +1,5 @@
 Summary:	Icons for Xfce
-Summary(pl.UTF-8):   Ikony dla Xfce
+Summary(pl.UTF-8):	Ikony dla Xfce
 Name:		xfce4-icon-theme
 Version:	4.4.0
 Release:	1
