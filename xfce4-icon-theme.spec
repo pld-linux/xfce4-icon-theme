@@ -1,5 +1,5 @@
 Summary: 	Icons for Xfce
-Summary(pl):	Ikony dla Xfce
+Summary(pl.UTF-8):   Ikony dla Xfce
 Name: 		xfce4-icon-theme
 Version: 	4.3.90.2
 Release: 	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Icon theme for Xfce Desktop Environment.
 
-%description -l pl
-Zestaw ikon dla ¶rodowiska Xfce.
+%description -l pl.UTF-8
+Zestaw ikon dla Å›rodowiska Xfce.
 
 %prep
 %setup -q
