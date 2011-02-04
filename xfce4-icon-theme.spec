@@ -10,7 +10,7 @@ Source0:	http://www.xfce.org/archive/xfce-%{version}/src/%{name}-%{version}.tar.
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2 >= 2:2.10.6
+BuildRequires:	gtk-update-icon-cache
 BuildRequires:	intltool >= 0.31
 BuildRequires:	perl-modules
 BuildArch:	noarch
